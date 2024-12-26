@@ -1,0 +1,14 @@
+{
+  "version": "1.0.0",
+  "timestamp": "2024-03-19T00:00:00Z",
+  "description": "Initial Press Play Films setup with Cloudflare deployment",
+  "changes": [
+    "Updated contact email to andrew@pressplaylv.com",
+    "Added Cloudflare deployment configuration",
+    "Fixed environment variable access",
+    "Added email service setup",
+    "Created DNS records template"
+  ],
+  "deploymentTarget": "cloudflare",
+  "emailServer": "pressplay.lv"
+}

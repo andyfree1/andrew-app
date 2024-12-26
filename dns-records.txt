@@ -1,0 +1,23 @@
+; DNS Records for pressplay.lv
+
+; A Record for main domain
+pressplay.lv.    IN    A    76.76.21.21
+
+; CNAME Records
+www.pressplay.lv.    IN    CNAME    pressplay-portfolio.pages.dev.
+
+; MX Records for Email
+pressplay.lv.    IN    MX    10    mx01.mail.icloud.com.
+pressplay.lv.    IN    MX    20    mx02.mail.icloud.com.
+
+; SPF Record
+pressplay.lv.    IN    TXT    "v=spf1 include:icloud.com ~all"
+
+; DKIM Record (iCloud)
+sig1.dkim.pressplay.lv.    IN    TXT    "v=DKIM1; k=rsa; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA..."
+
+; DMARC Record
+_dmarc.pressplay.lv.    IN    TXT    "v=DMARC1; p=quarantine; rua=mailto:dmarc@pressplay.lv"
+
+; Apple Domain Verification
+pressplay.lv.    IN    TXT    "apple-domain=QL4W..."
